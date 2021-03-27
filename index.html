@@ -8,10 +8,15 @@
 	<title>Завдання</title>
 </head>
 <script>
-	//Задача 4. Дано масив імен. Сформувати новий масив, який складається з імен, які починаються на задану літеру.
-	let arr = ['Anna', 'Anton', 'Igor', 'Vasil', 'Vanya', 'Serhii']
-	let arr1 = arr.filter((val, i, arr) => val[0] === 'A')
-	document.write(arr1)
+	//Задача 5. Дано ваги автомобілів на парковці. З’ясувати, чи усі автомобілі є легковими (легшими за 2000 кг).
+	let arr = [3000, 2500, 1500, 6000, 4000]
+	arr.every((val, i, arr) => {
+		if (val < 2000)
+			document.write('Всі легкові')
+		else
+			document.write('Не всі легкові')
+	})
+
 
 
 </script>
