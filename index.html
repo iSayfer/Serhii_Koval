@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>Завдання Таблиці</title>
+</head>
+<script>
+	//Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0.
+	let arr = [4, -2, 5, -1, 7]
+	arr.forEach((val, i, arr) => {
+		if (val < 0)
+			arr[i] = 0
+	})
+	document.write(arr)
+
+</script>
+
+<body></body>
+
+</html>
