@@ -5,17 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<title>Завдання Таблиці</title>
+	<title>Завдання</title>
 </head>
 <script>
-	//Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0.
-	let arr = [4, -2, 5, -1, 7]
-	arr.forEach((val, i, arr) => {
-		if (val < 0)
-			arr[i] = 0
-	})
+	//Задача 2. Дано масив цін. Сформувати новий масив, який містить тільки ті ціни, які менші за задану.
+	let arr = [4, 5, 15, 25, 7, 54, 35, 45]
 	document.write(arr)
-	 
+	let arr1 = arr.filter((val, i, arr) => val > 15)
+	document.write(`<br>${arr1}`)
+
 
 </script>
 
