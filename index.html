@@ -8,13 +8,15 @@
 	<title>Завдання</title>
 </head>
 <script>
-	//Задача 6. Дано масив, який зберігає кількість відвідувачів протягом тижня. З’ясувати, чи були дні, коли кількість відвідувачів була меншою за 10.
-	let arr = [10, 15, 2, 35, 22, 14]
-	if (arr.some((val, i, arr) => val < 10))
-		document.write('Були такі дні')
-	else
-		document.write('Не було таких днів')
-
+	//1.1	Задача. Відсортувати масив імен за останньою літерою.
+	let arr = ['Anna', 'Petro', 'Ivan', 'Vasya', 'Ira']
+	let sortFn = function (a, b) {
+		if (a[a.length - 1] < b[b.length - 1]) return -1;
+		if (a[a.length - 1] > b[b.length - 1]) return 1;
+		if (a[a.length - 1] == b[b.length - 1]) return 0;
+	}
+	arr.sort(sortFn)
+	document.write(arr)
 
 
 </script>
