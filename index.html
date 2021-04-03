@@ -8,15 +8,33 @@
 	<title>Завдання</title>
 </head>
 <script>
-	//57.	Дан массив. Заменить все числа, меньшие последнего элемента массива, на первый элемент.
+	//58.	Поменять местами наибольший и наименьший элементы массива.
 	let arr = [5, 90, 25, 41, 52, 64, 1, 82]
+	document.write(`${arr} <br>`)
+
+	let max = arr.reduce((prevMax, val, i, arr) => {
+		if (val > prevMax)
+			return val
+		else
+			return prevMax
+	})
+	let min = arr.reduce((prevMin, val, i, arr) => {
+		if (val < prevMin)
+			return val
+		else
+			return prevMin
+	})
 	arr.forEach((val, i, arr) => {
-		if (val < arr[arr.length - 1])
-			return arr[i] = arr[0]
+		if (val === max)
+			arr[i] = min
+		if (val === min)
+			arr[i] = max
 	})
 	document.write(arr)
 </script>
 
-<body></body>
+<body>
+
+</body>
 
 </html>
