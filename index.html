@@ -8,14 +8,13 @@
 	<title>Завдання</title>
 </head>
 <script>
-	//5.5	Задача. Дано масив цін товарів. Сформувати масив тих, які є меншими за 2000грн..
-	let arr = [1999, 7899, 1254, 895, 987, 988]
-	let arr1 = arr.filter((val, i, arr) => val < 2000)
-	document.write(arr1)
-
-
-
-
+	//57.	Дан массив. Заменить все числа, меньшие последнего элемента массива, на первый элемент.
+	let arr = [5, 90, 25, 41, 52, 64, 1, 82]
+	arr.forEach((val, i, arr) => {
+		if (val < arr[arr.length - 1])
+			return arr[i] = arr[0]
+	})
+	document.write(arr)
 </script>
 
 <body></body>
